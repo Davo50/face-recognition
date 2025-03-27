@@ -14,7 +14,7 @@ class FaceRecognitionModel(nn.Module):
         super(FaceRecognitionModel, self).__init__()
         
         # Load pre-trained ResNet50
-        self.backbone = models.resnet50(pretrained=pretrained)
+        self.backbone = models.resnet50(weights=models.ResNet50_Weights.DEFAULT if pretrained else None)
         
         # Freeze base model parameters
         for param in self.backbone.parameters():

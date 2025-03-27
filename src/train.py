@@ -117,8 +117,10 @@ def main():
     # Save model
     torch.save({
         'model_state_dict': trained_model.state_dict(),
-        'class_to_idx': class_to_idx
+        'class_to_idx': class_to_idx,
+        'num_classes': num_classes
     }, 'face_recognition_model.pth')
 
 if __name__ == '__main__':
+    main()
     main()
