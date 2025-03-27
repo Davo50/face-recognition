@@ -1,7 +1,7 @@
 # Face Recognition Project
 
 ## Overview
-This project implements a machine learning face recognition system using transfer learning with ResNet50V2.
+This project implements a machine learning face recognition system.
 
 ## Setup Instructions
 
