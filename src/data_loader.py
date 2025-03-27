@@ -1,3 +1,4 @@
+#data_loader.py
 import os
 import torch
 import torch.nn as nn
@@ -96,3 +97,4 @@ def create_data_loaders(data_dir, batch_size=32, split_ratio=0.2):
     )
     
     return train_loader, val_loader, num_classes, full_dataset.get_class_to_idx()
+

@@ -1,3 +1,4 @@
+#train.py
 import os
 import torch
 import torch.nn as nn
@@ -71,7 +72,7 @@ def train_model(model, dataloaders, criterion, optimizer, scheduler, num_epochs=
                 scheduler.step()
 
             epoch_loss = running_loss / len(dataloaders[phase].dataset)
-            epoch_acc = running_corrects.double() / len(dataloaders[phase].dataset)
+            epoch_acc = running_corrects.float() / len(dataloaders[phase].dataset)
 
             print(f'{phase} Loss: {epoch_loss:.4f} Acc: {epoch_acc:.4f}')
 
@@ -123,3 +124,5 @@ def main():
 
 if __name__ == '__main__':
     main()
+
+

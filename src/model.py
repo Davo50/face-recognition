@@ -1,3 +1,4 @@
+#model.py
 import torch
 import torch.nn as nn
 import torchvision.models as models
@@ -55,3 +56,5 @@ class FaceRecognitionModel(nn.Module):
             # Unfreeze specified layers
             for param in list(self.backbone.parameters())[-layers_to_unfreeze:]:
                 param.requires_grad = True
+
+                
