@@ -1,4 +1,3 @@
-#data_loader.py
 import os
 import torch
 import torch.nn as nn
